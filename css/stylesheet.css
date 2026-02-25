@@ -1,0 +1,95 @@
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color:#fffefe;
+  text-align:center;
+  font-family:'Open Sans',sans-serif;
+  margin-top:20px;
+}
+
+img {
+  border-radius:10px;
+  margin:auto;
+  padding-bottom: 5px;
+}
+
+#align{
+  text-align:center;
+  max-width:700px;
+  margin:auto;
+  
+}
+
+.green {
+  background-color:#43dd9d;
+  font-size:16px;
+  color:#fffefe;
+  padding:15px;
+  margin-top:10px;
+  border:2px solid transparent;
+  cursor:pointer;
+}
+
+.green:hover {
+  background-color:#87FFA3;
+  color:#43dd9d;
+  border:2px solid #43dd9d;
+}
+
+.blue {
+  background-color:#0D98BA;
+  font-size:16px;
+  color:#fffefe;
+  padding:15px;
+  margin-top:10px;
+  border:2px solid transparent;
+  cursor:pointer;
+}
+
+.blue:hover {
+  background-color:#11B5DD;
+  color:#43dd9d;
+  border:2px solid #43dd9d;
+}
+
+.center-p {
+  text-align:center;
+  color:black;
+  font-size:16px;
+  margin-bottom:12px;
+}
+
+p {
+  font-weight:bolder;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.bounce1 {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce1;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounce1;
+}
+@keyframes bounce1 {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-100px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-7px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+}

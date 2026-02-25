@@ -1,0 +1,223 @@
+@import 'fonts';
+@import 'config';
+@import 'mobile';
+@import 'waves-arrow';
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $body;
+}
+
+
+header {
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgb(0, 171, 194) 100%);
+  color:white;
+  text-align: center;
+  overflow: hidden;
+  
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    #links {
+      display: grid;
+      justify-content: right;
+      align-content: center;
+      grid-auto-flow: column; 
+      grid-gap: 1.5em;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5em;
+        font-family: $h2;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+      :hover {
+        color: #eec50d;
+      }
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-family: $h1;
+    font-size: 4em;
+
+    span {
+      font-weight: 700;
+      font-weight: bold;
+    }
+  }
+
+  h2 {
+    font-size: 2.5em;
+    font-family: $h2;
+  }
+
+    h1, h2 {
+        padding: 1.5rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+        ul > li {
+            padding: 0 5rem;
+            display: block;
+        }
+
+        .job-item .none {
+          color: #232323;
+          font-size: 1rem;
+      }
+      
+}
+
+
+.inner-header {
+  height: 60vh;
+  width: 100%;
+}
+
+.flex { /*Yay centering things! w/ one line of code */
+  display: grid;
+  place-content: center;
+}
+
+.skewed-bg {
+  margin-top: 200px;
+  background: #00B285;
+  padding: 200px 0;
+  transform: (skew(0deg, -10deg));
+}
+
+.content {
+  transform: (skew(0deg, 10deg));
+}
+
+.exp {
+  justify-content: center;
+  text-emphasis: none;
+  text-align: center;
+  
+  color: #fff;
+}
+
+.skewed-bg-reversed {
+  margin-top: 300px;
+  background: rgb(0, 135, 212);
+  padding: 200px 0;
+  transform: (skew(0deg, 10deg));
+}
+
+
+.content-reversed {
+  transform: (skew(0deg, -10deg));
+  color: #fff;
+}
+
+
+.exp-reversed {
+  justify-content: center;
+  text-emphasis: none;
+  text-align: center;
+  
+}
+
+
+.job-item {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  
+
+   h1 {
+     font-size: 2.5em;
+   }
+
+   h2 {
+     font-size: 1.75em;
+   }
+
+   h3 {
+     font-size: 1em;
+   }
+
+   p {
+     font-size: 1.25em;
+     padding: 0rem 200px;
+   }
+
+  .item {
+    width: 100%;
+    padding: 30px 10px;
+    text-align: center;
+    color: #fff;
+    
+    img {
+      border-radius: 5px;
+	  width: 300px;
+	  height: 300px;
+    }
+  }
+
+  .none {
+    color: #232323;
+    font-size: 1.4rem;
+  }
+}
+
+footer {
+    font-size: 1rem;
+    position: relative;
+    top: 100px;
+    padding: 1.5rem;
+
+    .fa {
+      font-size: 2rem;
+      padding: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #232323;
+    }
+
+    a:hover {
+      color: rgb(14, 233, 25);
+    }
+}
+
+.bounce1 {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce1;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounce1;
+}
+@keyframes bounce1 {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-100px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-7px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+}

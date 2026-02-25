@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Merriweather&family=Rubik&display=swap");
+@media (max-width: 768px) {
+  header nav {
+    font-size: 1em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav img {
+    height: 100px;
+    width: 100px;
+  }
+  .inner-header h1 {
+    font-size: 2rem;
+  }
+  .inner-header h2 {
+    font-size: 1.6em;
+  }
+  .inner-header h3 {
+    font-size: 1em;
+  }
+  h1.exp {
+    height: 0vh;
+    font-size: 1.35em;
+  }
+  .job-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+    padding-top: 2em;
+  }
+  .job-item .item p {
+    font-size: 1rem;
+    padding: 1.5em;
+    text-align: left;
+  }
+  .job-item .item img {
+    height: 200px;
+    width: 300px;
+  }
+  .skewed-bg-reversed {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skewed-bg-reversed .exp-reversed {
+    font-size: 1.2em;
+  }
+  .skewed-bg-reversed .item {
+    font-size: 0.7em;
+  }
+  .job-item .none {
+    text-decoration: underline;
+    color: #232323;
+    font-size: 1rem;
+  }
+}
+
+.waves {
+  width: 100%;
+  margin-bottom: -75px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 200px;
+}
+
+.bounce1 {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce1;
+  -webkit-animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+          animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounce1;
+}
+
+@-webkit-keyframes bounce1 {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1.1, 0.9) translateY(0);
+            transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-100px);
+            transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 0.95) translateY(0);
+            transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(-7px);
+            transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+
+@keyframes bounce1 {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1.1, 0.9) translateY(0);
+            transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-100px);
+            transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 0.95) translateY(0);
+            transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(-7px);
+            transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+
+/* Animation */
+.parallax > use {
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+@-webkit-keyframes move-forever {
+  0% {
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(85px, 0, 0);
+            transform: translate3d(85px, 0, 0);
+  }
+}
+
+@keyframes move-forever {
+  0% {
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(85px, 0, 0);
+            transform: translate3d(85px, 0, 0);
+  }
+}
+
+.arrow_down {
+  cursor: pointer;
+  position: relative;
+  bottom: 150px;
+  height: 45px;
+  width: 45px;
+  margin: 0 auto;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 1.2345s;
+  animation-duration: 1.2345s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+.arrow_down svg path {
+  fill: #fff;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 30px;
+    min-height: 50px;
+  }
+  .content {
+    height: 60vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .arrow_down {
+    bottom: 0px;
+  }
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+header {
+  background: linear-gradient(60deg, #543ab7 0%, #00abc2 100%);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+header nav #links {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+}
+
+header nav #links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header nav #links :hover {
+  color: #eec50d;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-family: "Kalam", cursive;
+  font-size: 4em;
+}
+
+header h1 span {
+  font-weight: 700;
+  font-weight: bold;
+}
+
+header h2 {
+  font-size: 2.5em;
+  font-family: "Rubik", sans-serif;
+}
+
+header h1, header h2 {
+  padding: 1.5rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header ul > li {
+  padding: 0 5rem;
+  display: block;
+}
+
+header .job-item .none {
+  color: #232323;
+  font-size: 1rem;
+}
+
+.inner-header {
+  height: 60vh;
+  width: 100%;
+}
+
+.flex {
+  /*Yay centering things! w/ one line of code */
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.skewed-bg {
+  margin-top: 200px;
+  background: #00B285;
+  padding: 200px 0;
+  -webkit-transform: skew(0deg, -10deg);
+          transform: skew(0deg, -10deg);
+}
+
+.content {
+  -webkit-transform: skew(0deg, 10deg);
+          transform: skew(0deg, 10deg);
+}
+
+.exp {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  text-align: center;
+  color: #fff;
+}
+
+.skewed-bg-reversed {
+  margin-top: 300px;
+  background: #0087d4;
+  padding: 200px 0;
+  -webkit-transform: skew(0deg, 10deg);
+          transform: skew(0deg, 10deg);
+}
+
+.content-reversed {
+  -webkit-transform: skew(0deg, -10deg);
+          transform: skew(0deg, -10deg);
+  color: #fff;
+}
+
+.exp-reversed {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  text-align: center;
+}
+
+.job-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.job-item h1 {
+  font-size: 2.5em;
+}
+
+.job-item h2 {
+  font-size: 1.75em;
+}
+
+.job-item h3 {
+  font-size: 1em;
+}
+
+.job-item p {
+  font-size: 1.25em;
+  padding: 0rem 200px;
+}
+
+.job-item .item {
+  width: 100%;
+  padding: 30px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.job-item .item img {
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+}
+
+.job-item .none {
+  color: #232323;
+  font-size: 1.4rem;
+}
+
+footer {
+  font-size: 1rem;
+  position: relative;
+  top: 100px;
+  padding: 1.5rem;
+}
+
+footer .fa {
+  font-size: 2rem;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #232323;
+}
+
+footer a:hover {
+  color: #0ee919;
+}
+
+.bounce1 {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce1;
+  -webkit-animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+          animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounce1;
+}
+
+@keyframes bounce1 {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1.1, 0.9) translateY(0);
+            transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-100px);
+            transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 0.95) translateY(0);
+            transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(-7px);
+            transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */

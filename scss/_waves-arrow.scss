@@ -1,0 +1,133 @@
+.waves {
+  width: 100%;
+  margin-bottom: -75px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 200px;
+}
+
+.bounce1 {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce1;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounce1;
+}
+@keyframes bounce1 {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-100px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-7px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+.arrow_down {
+  cursor: pointer;
+  position: relative;
+  bottom: 150px;
+	height: 45px;
+	width: 45px;
+	margin: 0 auto;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+	-webkit-animation-duration: 1.2345s;
+  -moz-animation-duration: 1.2345s;
+  animation-duration: 1.2345s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	animation-name: bounce;
+
+	svg path {
+		fill: #fff;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+  40% {-webkit-transform: translateY(-30px);}
+  60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+  40% {-moz-transform: translateY(-30px);}
+  60% {-moz-transform: translateY(-15px);}
+}
+
+@-ms-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-ms-transform: translateY(0);}
+  40% {-ms-transform: translateY(-30px);}
+  60% {-ms-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+  40% {-o-transform: translateY(-30px);}
+  60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+
+
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 30px;
+    min-height: 50px;
+  }
+  .content {
+    height: 60vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+
+  .arrow_down {
+    bottom: 0px;
+  }
+}
+

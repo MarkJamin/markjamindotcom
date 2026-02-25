@@ -1,0 +1,74 @@
+@media (max-width: 768px) {
+
+  header {
+    nav {
+      font-size: 1em;
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+        height: 35px;
+        width: 100%;
+      }
+    }
+  }
+    
+
+
+  .inner-header {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.6em;
+    }
+
+    h3 {
+      font-size: 1em;
+    }
+  }
+
+  h1.exp {
+    height: 0vh;
+    font-size: 1.35em;
+  }
+
+  .job-item {
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-top: 2em;
+
+    .item {
+      p {
+        font-size: 1rem;
+        padding: 1.5em;
+        text-align: left;
+      }
+
+      img {
+        height: 200px;
+        width: 300px;
+      }
+    }
+  }
+
+  .skewed-bg-reversed {
+    
+    justify-content: center;
+
+    .exp-reversed {
+      font-size: 1.2em;
+    }
+
+    .item {
+      font-size: 0.7em;
+    }
+  }
+
+  .job-item .none {
+    text-decoration: underline;
+    color: #232323;
+    font-size: 1rem;
+}
+}
